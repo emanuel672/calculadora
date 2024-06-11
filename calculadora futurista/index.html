@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Importa o arquivo CSS -->
+  <title>Emanuel Davi</title>
+</head>
+<body>
+  <div class="container"> <!-- Container principal -->
+    <div class="calc-grid"> <!-- Grid para a calculadora -->
+      <div class="output" id="display-1"> <!-- Visor da calculadora -->
+        <div class="solar" id="solar-panel"> <!-- Elemento decorativo (não utilizado pelo script) -->
+          <span class="solar-2"></span> <!-- Elemento decorativo (não utilizado pelo script) -->
+        </div>
+        <div class="output-2"></div> <!-- Elemento decorativo (não utilizado pelo script) -->
+        <div data-previous class="previous-operand"></div> <!-- Mostra o operando anterior -->
+        <div data-current class="current-operand" id="display">NaN12341241243</div> <!-- Mostra o número atual -->
+      </div>
+      <button data-AC class="span-two" id="clear" onclick="press('ac')">AC</button> <!-- Botão para limpar (All Clear) -->
+      <button data-delete id="DEL" onclick="press('delete')">DEL</button> <!-- Botão para deletar o último dígito -->
+      <button data-operation id="divide" onclick="press('divide')">÷</button> <!-- Botão para operação de divisão -->
+      <button data-number id="seven" onclick="press('seven')">7</button> <!-- Botão para o número 7 -->
+      <button data-number id="eight" onclick="press('eight')">8</button> <!-- Botão para o número 8 -->
+      <button data-number id="nine" onclick="press('nine')">9</button> <!-- Botão para o número 9 -->
+      <button data-operation id="multiply" onclick="press('multiply')">X</button> <!-- Botão para operação de multiplicação -->
+      <button data-number id="four" onclick="press('four')">4</button> <!-- Botão para o número 4 -->
+      <button data-number id="five" onclick="press('five')">5</button> <!-- Botão para o número 5 -->
+      <button data-number id="six" onclick="press('six')">6</button> <!-- Botão para o número 6 -->
+      <button data-operation id="subtract" onclick="press('subtract')">-</button> <!-- Botão para operação de subtração -->
+      <button data-number id="one" onclick="press('one')">1</button> <!-- Botão para o número 1 -->
+      <button data-number id="two" onclick="press('two')">2</button> <!-- Botão para o número 2 -->
+      <button data-number id="three" onclick="press('three')">3</button> <!-- Botão para o número 3 -->
+      <button data-operation id="add" class="span-two-up" onclick="press('add')">+</button> <!-- Botão para operação de adição -->
+      <button data-number id="zero" onclick="press('zero')">0</button> <!-- Botão para o número 0 -->
+      <button data-number id="decimal" onclick="press('decimal')">.</button> <!-- Botão para adicionar um ponto decimal -->
+      <button data-equals id="equals" onclick="press('equals')">=</button> <!-- Botão para calcular o resultado -->
+    </div>
+  </div>
+  <script src="./script.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
